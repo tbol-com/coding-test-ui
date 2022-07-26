@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react";
 import Button from "./components/Button";
 import "./App.css";
-
+import Dashboard from "./components/Dashboard/Dashboard";
 interface AppProps {
   message?: string;
-};
+}
 interface AppState {
   count: number;
-};
+}
 
 class App extends React.Component<AppProps, AppState> {
   constructor(props: AppProps) {
     super(props);
     this.state = {
-      count: 0
+      count: 0,
     };
     this.increment = this.increment.bind(this);
     this.decrement = this.decrement.bind(this);
@@ -21,20 +21,21 @@ class App extends React.Component<AppProps, AppState> {
 
   increment() {
     this.setState({
-      count: this.state.count + 1
+      count: this.state.count + 1,
     });
-  };
+  }
 
   decrement() {
     this.setState({
-      count: this.state.count - 1
+      count: this.state.count - 1,
     });
-  };
+  }
 
   render() {
     return (
       <div className="app">
-        <div>
+        <Dashboard />
+        {/* <div>
           <div className="count">
             <h3>Count:</h3>
             <h1>{this.state.count}</h1>
@@ -43,10 +44,10 @@ class App extends React.Component<AppProps, AppState> {
             <Button title={"-"} action={this.decrement} />
             <Button title={"+"} action={this.increment} />
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }
-};
+}
 
 export default App;

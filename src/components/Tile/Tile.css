@@ -1,0 +1,14 @@
+.tile {
+  min-width: 300px;
+  min-height: 300px;
+  border: 1px solid red;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile:first-of-type {
+  margin-left: 0px;
+}
