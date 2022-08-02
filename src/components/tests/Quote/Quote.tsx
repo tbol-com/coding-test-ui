@@ -11,8 +11,8 @@ const fetchRandomQuote = async () => {}; // Implement this function
  * Use the QUOTE_API_URL above to request data via GET.
  * Use Hooks for your implementation.
  */
-const RestApp = () => {
+const Quote = () => {
   return null;
 };
 
-export default RestApp;
+export default Quote;

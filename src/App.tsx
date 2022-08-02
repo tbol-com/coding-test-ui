@@ -1,53 +1,54 @@
 import React from "react";
-import Button from "./components/Button";
-import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import TestLayout from "./components/TestLayout/TestLayout";
 import Dashboard from "./components/Dashboard/Dashboard";
-interface AppProps {
-  message?: string;
-}
-interface AppState {
-  count: number;
-}
+import Counter from "./components/tests/Counter/Counter";
+import Quote from "./components/tests/Quote/Quote";
+import Fetch from "./components/tests/Fetch/Fetch";
+import Form from "./components/tests/Form/Form";
 
-class App extends React.Component<AppProps, AppState> {
-  constructor(props: AppProps) {
-    super(props);
-    this.state = {
-      count: 0,
-    };
-    this.increment = this.increment.bind(this);
-    this.decrement = this.decrement.bind(this);
-  }
+import NotFound from "./components/NotFound/NotFound";
+import { tests } from "./utils/constants";
 
-  increment() {
-    this.setState({
-      count: this.state.count + 1,
-    });
-  }
+import "./App.css";
 
-  decrement() {
-    this.setState({
-      count: this.state.count - 1,
-    });
-  }
-
-  render() {
-    return (
-      <div className="app">
-        <Dashboard />
-        {/* <div>
-          <div className="count">
-            <h3>Count:</h3>
-            <h1>{this.state.count}</h1>
-          </div>
-          <div className="buttons">
-            <Button title={"-"} action={this.decrement} />
-            <Button title={"+"} action={this.increment} />
-          </div>
-        </div> */}
-      </div>
-    );
-  }
-}
+const App: React.FC = () => (
+  <Routes>
+    <Route path="/" element={<Dashboard />} />
+    <Route
+      path={tests.counter.url}
+      element={
+        <TestLayout test={tests.counter}>
+          <Counter />
+        </TestLayout>
+      }
+    />
+    <Route
+      path={tests.quote.url}
+      element={
+        <TestLayout test={tests.quote}>
+          <Quote />
+        </TestLayout>
+      }
+    />
+    <Route
+      path={tests.fetch.url}
+      element={
+        <TestLayout test={tests.fetch}>
+          <Fetch />
+        </TestLayout>
+      }
+    />
+    <Route
+      path={tests.form.url}
+      element={
+        <TestLayout test={tests.form}>
+          <Form />
+        </TestLayout>
+      }
+    />
+    <Route path="*" element={<NotFound />} />
+  </Routes>
+);
 
 export default App;
