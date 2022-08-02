@@ -1,3 +1,6 @@
+import React from "react";
+import "./Quote.css";
+
 /*
  * This is a GET endpoint, that returns a random Kanye West Quote
  * Format: {"quote":"This is a random quote"}
@@ -11,8 +14,8 @@ const fetchRandomQuote = async () => {}; // Implement this function
  * Use the QUOTE_API_URL above to request data via GET.
  * Use Hooks for your implementation.
  */
-const Quote = () => {
-  return null;
+const Quote: React.FC = () => {
+  return <h1 className="quoteTitle">Qoute Component</h1>;
 };
 
 export default Quote;
