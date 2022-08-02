@@ -15,8 +15,8 @@ const FetchDescription: React.FunctionComponent = () => {
         >
           documentation
         </a>{" "}
-        here. Display charachters in a table. For each charachter show the
-        image, name, origin name, location name and episodes count.
+        here. Display characters in a table. For each charachter show the image,
+        name, origin name, location name and episodes count.
       </p>
       <p>
         Use the <b>src/components/tests/Fetch/Fetch.tsx</b> component. It's

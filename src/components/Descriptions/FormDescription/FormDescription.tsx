@@ -5,7 +5,7 @@ const FormDescription: React.FunctionComponent = () => {
     <div className="formDescription">
       <p>Create a form with the following fields</p>
       <ul>
-        <li>title: text, max 30 charachters</li>
+        <li>title: text, max 30 characters</li>
         <li>price: number, max value 1,000,000</li>
         <li>description: text</li>
         <li>image: text in url format</li>
