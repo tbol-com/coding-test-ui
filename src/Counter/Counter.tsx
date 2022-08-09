@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../Button";
+import Button from "../zz_TestRunner/TestComponents/Button";
 import "./Counter.css";
 
 interface CounterProps {

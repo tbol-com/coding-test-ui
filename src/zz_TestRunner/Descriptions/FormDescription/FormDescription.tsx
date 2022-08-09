@@ -19,24 +19,11 @@ const FormDescription: React.FunctionComponent = () => {
         </li>
       </ul>
       <p>
-        Description and image are optional fields, all other fields are
-        required. Have validation for the form. Submit it to{" "}
-        <i>https://fakestoreapi.com/products</i> with POST method. See the API{" "}
-        <a
-          href="https://fakestoreapi.com/docs"
-          target="_blank"
-          rel="noreferrer"
-        >
-          documentation here
-        </a>
+        Submit it to <i>https://fakestoreapi.com/products</i> with POST method.
       </p>
+      <p>In case of success show the following message `Product has been added`. In case of error show corresponding error message</p>
       <p>
-        In case of success show the following message `Product has been added`.
-        In case of error show corresponding error message
-      </p>
-      <p>
-        Use the <b>src/components/tests/Form/Form.tsx</b> Component. It's
-        displayed on the right side.
+        Use the <b>src/components/tests/Form/Form.tsx</b> Component. It's displayed on the right side.
       </p>
     </div>
   );

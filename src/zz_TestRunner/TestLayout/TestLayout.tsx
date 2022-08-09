@@ -10,10 +10,7 @@ interface TestLayoutProps {
   };
 }
 
-const TestLayout: React.FunctionComponent<TestLayoutProps> = ({
-  children,
-  test,
-}) => {
+const TestLayout: React.FunctionComponent<TestLayoutProps> = ({ children, test }) => {
   const { description: Description } = test;
   return (
     <div className="testLayout">

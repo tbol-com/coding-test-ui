@@ -1,13 +1,13 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import TestLayout from "./components/TestLayout/TestLayout";
-import Dashboard from "./components/Dashboard/Dashboard";
-import Counter from "./components/tests/Counter/Counter";
-import Quote from "./components/tests/Quote/Quote";
-import Fetch from "./components/tests/Fetch/Fetch";
-import Form from "./components/tests/Form/Form";
+import TestLayout from "./TestLayout/TestLayout";
+import Dashboard from "./TestComponents/Dashboard/Dashboard";
+import Counter from "../Counter/Counter";
+import Quote from "../Quote/Quote";
+import Fetch from "../Fetch/Fetch";
+import Form from "../Form/Form";
 
-import NotFound from "./components/NotFound/NotFound";
+import NotFound from "./NotFound/NotFound";
 import { tests } from "./utils/constants";
 
 import "./App.css";

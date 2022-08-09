@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Tile from "../Tile/Tile";
 import "./Dashboard.css";
 import { tests } from "../../utils/constants";
-import logo from "../../assets/img/tbol-logo-full.png";
+import logo from "../../../assets/img/tbol-logo-full.png";
 
 const Dashboard = () => {
   return (
