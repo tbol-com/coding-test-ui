@@ -5,10 +5,10 @@ const FormDescription: React.FunctionComponent = () => {
     <div className="formDescription">
       <p>Create a form with the following fields</p>
       <ul>
-        <li>title: text, max 30 characters</li>
-        <li>price: number, max value 1,000,000</li>
-        <li>description: text</li>
-        <li>image: text in url format</li>
+        <li>title</li>
+        <li>price</li>
+        <li>description</li>
+        <li>image</li>
         <li>
           category: select with the following options
           <ul>
@@ -21,9 +21,13 @@ const FormDescription: React.FunctionComponent = () => {
       <p>
         Submit it to <i>https://fakestoreapi.com/products</i> with POST method.
       </p>
-      <p>In case of success show the following message `Product has been added`. In case of error show corresponding error message</p>
       <p>
-        Use the <b>src/components/tests/Form/Form.tsx</b> Component. It's displayed on the right side.
+        In case of success show the following message `Product has been added`.
+        In case of error show corresponding error message
+      </p>
+      <p>
+        Use the <b>src/components/tests/Form/Form.tsx</b> Component. It's
+        displayed on the right side.
       </p>
     </div>
   );
