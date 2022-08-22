@@ -2,10 +2,10 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import TestLayout from "./TestLayout/TestLayout";
 import Dashboard from "./TestComponents/Dashboard/Dashboard";
-import Counter from "../Counter/Counter";
-import Quote from "../Quote/Quote";
-import Fetch from "../Fetch/Fetch";
-import Form from "../Form/Form";
+import Numbers from "../Numbers/Numbers";
+import Kanye from "../Kanye/Kanye";
+import Morty from "../Morty/Morty";
+import Items from "../Items/Items";
 
 import NotFound from "./NotFound/NotFound";
 import { tests } from "./utils/constants";
@@ -16,34 +16,34 @@ const App: React.FC = () => (
   <Routes>
     <Route path="/" element={<Dashboard />} />
     <Route
-      path={tests.counter.url}
+      path={tests.numbers.url}
       element={
-        <TestLayout test={tests.counter}>
-          <Counter />
+        <TestLayout test={tests.numbers}>
+          <Numbers />
         </TestLayout>
       }
     />
     <Route
-      path={tests.quote.url}
+      path={tests.kanye.url}
       element={
-        <TestLayout test={tests.quote}>
-          <Quote />
+        <TestLayout test={tests.kanye}>
+          <Kanye />
         </TestLayout>
       }
     />
     <Route
-      path={tests.fetch.url}
+      path={tests.morty.url}
       element={
-        <TestLayout test={tests.fetch}>
-          <Fetch />
+        <TestLayout test={tests.morty}>
+          <Morty />
         </TestLayout>
       }
     />
     <Route
-      path={tests.form.url}
+      path={tests.items.url}
       element={
-        <TestLayout test={tests.form}>
-          <Form />
+        <TestLayout test={tests.items}>
+          <Items />
         </TestLayout>
       }
     />

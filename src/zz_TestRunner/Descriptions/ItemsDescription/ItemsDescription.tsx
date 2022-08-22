@@ -1,8 +1,8 @@
 import React from "react";
 
-const FormDescription: React.FunctionComponent = () => {
+const ItemsDescription: React.FunctionComponent = () => {
   return (
-    <div className="formDescription">
+    <div>
       <p>Create a form with the following fields</p>
       <ul>
         <li>title</li>
@@ -26,11 +26,11 @@ const FormDescription: React.FunctionComponent = () => {
         In case of error show corresponding error message
       </p>
       <p>
-        Use the <b>src/components/tests/Form/Form.tsx</b> Component. It's
+        Use the <b>src/components/tests/Items/Items.tsx</b> Component. It's
         displayed on the right side.
       </p>
     </div>
   );
 };
 
-export default FormDescription;
+export default ItemsDescription;

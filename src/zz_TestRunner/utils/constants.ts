@@ -1,19 +1,15 @@
-import CounterDescription from "../Descriptions/CounterDescription/CounterDescription";
-import QuoteDescription from "../Descriptions/QuoteDescription/QuoteDescription";
-import FetchDescription from "../Descriptions/FetchDescription/FetchDescription";
-import FormDescription from "../Descriptions/FormDescription/FormDescription";
+import NumbersDescription from "../Descriptions/NumbersDescription/NumbersDescription";
+import KanyeDescription from "../Descriptions/KanyeDescription/KanyeDescription";
+import MortyDescription from "../Descriptions/MortyDescription/MortyDescription";
+import ItemsDescription from "../Descriptions/ItemsDescription/ItemsDescription";
 
 export const tests = {
-  counter: {
+  numbers: {
     title: "Numbers",
-    url: "counter",
-    description: CounterDescription,
+    url: "numbers",
+    description: NumbersDescription,
   },
-  quote: {
-    title: "Kanye",
-    url: "quote",
-    description: QuoteDescription,
-  },
-  fetch: { title: "Morty", url: "fetch", description: FetchDescription },
-  form: { title: "Items", url: "form", description: FormDescription },
+  kanye: { title: "Kanye", url: "kanye", description: KanyeDescription },
+  morty: { title: "Morty", url: "morty", description: MortyDescription },
+  items: { title: "Items", url: "items", description: ItemsDescription },
 };

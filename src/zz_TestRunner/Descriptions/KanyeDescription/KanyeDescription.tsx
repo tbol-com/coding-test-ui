@@ -1,9 +1,9 @@
 import React from "react";
-import "./QuoteDescription.css";
+import "./KanyeDescription.css";
 
-const QuoteDescription: React.FunctionComponent = () => {
+const KanyeDescription: React.FunctionComponent = () => {
   return (
-    <div className="quoteDescription">
+    <div className="kanyeDescription">
       <p>
         This is a <i>GET</i> endpoint
         <br />
@@ -22,11 +22,11 @@ const QuoteDescription: React.FunctionComponent = () => {
         via <i>GET</i>. Use Hooks for your implementation.
       </p>
       <p>
-        Use the <b>src/components/tests/Quote/Quote.tsx</b> component. It's
+        Use the <b>src/components/tests/Kanye/Kanye.tsx</b> component. It's
         displayed on the right side.
       </p>
     </div>
   );
 };
 
-export default QuoteDescription;
+export default KanyeDescription;

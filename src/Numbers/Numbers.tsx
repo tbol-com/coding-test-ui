@@ -1,15 +1,16 @@
 import React from "react";
 import Button from "../zz_TestRunner/TestComponents/Button";
-import "./Counter.css";
+import "./Numbers.css";
 
 interface CounterProps {
   message?: string;
 }
+
 interface CounterState {
   count: number;
 }
 
-class Counter extends React.Component<CounterProps, CounterState> {
+class Numbers extends React.Component<CounterProps, CounterState> {
   constructor(props: CounterProps) {
     super(props);
     this.state = {
@@ -33,7 +34,7 @@ class Counter extends React.Component<CounterProps, CounterState> {
 
   render() {
     return (
-      <div className="counter">
+      <div className="numbers">
         <div>
           <div className="count">
             <h3>Count:</h3>
@@ -49,4 +50,4 @@ class Counter extends React.Component<CounterProps, CounterState> {
   }
 }
 
-export default Counter;
+export default Numbers;

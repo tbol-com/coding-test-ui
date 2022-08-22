@@ -1,8 +1,8 @@
-.fetchDescription .link {
+.mortyDescription .link {
   text-decoration: none;
 }
 
-.fetchDescription .box {
+.mortyDescription .box {
   margin-top: 1rem;
   background-color: #c8c8c81a;
   border: 1px solid #eeeeee;
