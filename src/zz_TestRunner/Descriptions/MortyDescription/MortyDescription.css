@@ -1,3 +1,7 @@
+.mortyDescription {
+  word-wrap: break-word;
+}
+
 .mortyDescription .link {
   text-decoration: none;
 }

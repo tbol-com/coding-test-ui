@@ -1,8 +1,9 @@
 import React from "react";
+import "./ItemsDescription.css";
 
 const ItemsDescription: React.FunctionComponent = () => {
   return (
-    <div>
+    <div className="itemsDescription">
       <p>Create a form with the following fields</p>
       <ul>
         <li>title</li>
@@ -19,7 +20,7 @@ const ItemsDescription: React.FunctionComponent = () => {
         </li>
       </ul>
       <p>
-        Submit it to <i>https://fakestoreapi.com/products</i> with POST method.
+        Submit it to <i>https://reqres.in/api/users</i> with POST method.
       </p>
       <p>
         In case of success show the following message `Product has been added`.

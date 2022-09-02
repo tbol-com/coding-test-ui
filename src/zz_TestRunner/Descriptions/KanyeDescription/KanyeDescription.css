@@ -1,3 +1,7 @@
+.kanyeDescription {
+  word-wrap: break-word;
+}
+
 .kanyeDescription .box {
   margin-top: 1rem;
   background-color: #c8c8c81a;
@@ -5,4 +9,5 @@
   padding: 1rem;
   border-radius: 4px;
   font-weight: bold;
+  word-wrap: break-word;
 }

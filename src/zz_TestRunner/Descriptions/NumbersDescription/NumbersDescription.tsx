@@ -1,8 +1,9 @@
 import React from "react";
+import "./NumbersDescription.css";
 
 const NumbersDescription: React.FunctionComponent = () => {
   return (
-    <div>
+    <div className="numbersDescription">
       <p>
         Open the Numbers Component -
         <b>src/components/tests/Numbers/Numbers.tsx</b>
