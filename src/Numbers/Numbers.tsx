@@ -1,19 +1,20 @@
-import React from 'react';
-import Button from "./components/Button";
-import "./App.css";
+import React from "react";
+import Button from "../zz_TestRunner/TestComponents/Button";
+import "./Numbers.css";
 
-interface AppProps {
+interface CounterProps {
   message?: string;
-};
-interface AppState {
-  count: number;
-};
+}
 
-class App extends React.Component<AppProps, AppState> {
-  constructor(props: AppProps) {
+interface CounterState {
+  count: number;
+}
+
+class Numbers extends React.Component<CounterProps, CounterState> {
+  constructor(props: CounterProps) {
     super(props);
     this.state = {
-      count: 0
+      count: 0,
     };
     this.increment = this.increment.bind(this);
     this.decrement = this.decrement.bind(this);
@@ -21,19 +22,19 @@ class App extends React.Component<AppProps, AppState> {
 
   increment() {
     this.setState({
-      count: this.state.count + 1
+      count: this.state.count + 1,
     });
-  };
+  }
 
   decrement() {
     this.setState({
-      count: this.state.count - 1
+      count: this.state.count - 1,
     });
-  };
+  }
 
   render() {
     return (
-      <div className="app">
+      <div className="numbers">
         <div>
           <div className="count">
             <h3>Count:</h3>
@@ -47,6 +48,6 @@ class App extends React.Component<AppProps, AppState> {
       </div>
     );
   }
-};
+}
 
-export default App;
+export default Numbers;
