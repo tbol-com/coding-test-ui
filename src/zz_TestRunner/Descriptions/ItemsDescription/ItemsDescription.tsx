@@ -27,8 +27,8 @@ const ItemsDescription: React.FunctionComponent = () => {
         In case of error show corresponding error message
       </p>
       <p>
-        Use the <b>src/components/tests/Items/Items.tsx</b> Component. It's
-        displayed on the right side.
+        Use the <b>src/Items/Items.tsx</b> Component. It's displayed on the
+        right side.
       </p>
     </div>
   );

@@ -27,8 +27,7 @@ const MortyDescription: React.FunctionComponent = () => {
           className="link"
           href="https://rickandmortyapi.com/documentation/#rest"
           target="_blank"
-          rel="noreferrer"
-        >
+          rel="noreferrer">
           documentation here.
         </a>{" "}
       </p>
@@ -38,8 +37,8 @@ const MortyDescription: React.FunctionComponent = () => {
         .
       </p>
       <p>
-        Use the <b>src/components/tests/Morty/Morty.tsx</b> component. It's
-        displayed on the right side.
+        Use the <b>src/Morty/Morty.tsx</b> component. It's displayed on the
+        right side.
       </p>
     </div>
   );
