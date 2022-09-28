@@ -5,8 +5,7 @@ const NumbersDescription: React.FunctionComponent = () => {
   return (
     <div className="numbersDescription">
       <p>
-        Open the Numbers Component -
-        <b>src/components/tests/Numbers/Numbers.tsx</b>
+        Open the Numbers Component -<b>src/Numbers/Numbers.tsx</b>
       </p>
       <p>It's is displayed on the right side.</p>
       <p>

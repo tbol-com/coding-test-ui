@@ -22,8 +22,8 @@ const KanyeDescription: React.FunctionComponent = () => {
         via <i>GET</i>. Use Hooks for your implementation.
       </p>
       <p>
-        Use the <b>src/components/tests/Kanye/Kanye.tsx</b> component. It's
-        displayed on the right side.
+        Use the <b>src/Kanye/Kanye.tsx</b> component. It's displayed on the
+        right side.
       </p>
     </div>
   );
