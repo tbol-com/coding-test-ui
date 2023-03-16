@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import TestLayout from "./TestLayout/TestLayout";
 import Dashboard from "./TestComponents/Dashboard/Dashboard";
 import Numbers from "../Numbers/Numbers";
-import Kanye from "../Kanye/Kanye";
+import Quote from "../Quote/Quote";
 import Morty from "../Morty/Morty";
 import Items from "../Items/Items";
 
@@ -24,10 +24,10 @@ const App: React.FC = () => (
       }
     />
     <Route
-      path={tests.kanye.url}
+      path={tests.quote.url}
       element={
-        <TestLayout test={tests.kanye}>
-          <Kanye />
+        <TestLayout test={tests.quote}>
+          <Quote />
         </TestLayout>
       }
     />
