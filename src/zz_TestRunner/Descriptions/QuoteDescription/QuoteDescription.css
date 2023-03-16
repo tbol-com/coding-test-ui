@@ -1,8 +1,8 @@
-.kanyeDescription {
+.quoteDescription {
   word-wrap: break-word;
 }
 
-.kanyeDescription .box {
+.quoteDescription .box {
   margin-top: 1rem;
   background-color: #c8c8c81a;
   border: 1px solid #eeeeee;
