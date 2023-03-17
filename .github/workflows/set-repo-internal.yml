@@ -17,7 +17,7 @@ jobs:
       - name: Set repo to internal
         uses: actions/github-script@v3
         with:
-          github-token: ${{secrets.BRANCH_BYPASS_TOKEN}}
+          github-token: ${{secrets.BRANCH_PROTECTION_BYPASS}}
           script: |
             github.repos.update({
               owner: context.repo.owner,
