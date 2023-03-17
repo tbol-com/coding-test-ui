@@ -1,8 +1,5 @@
 on:
   public:
-  push:
-    branches:
-      - feature/make-private
 
 # Only one of these should be running at a time
 concurrency:
@@ -12,8 +9,8 @@ jobs:
   set-repo-internal:
     runs-on: ubuntu-latest
     steps:
-      # - name: Wait 2 hours
-      #   run: sleep 7200
+      - name: Wait 2 hours
+        run: sleep 7200
       - name: Set repo to internal
         uses: actions/github-script@v3
         with:
