@@ -9,12 +9,12 @@ jobs:
   set-repo-internal:
     runs-on: ubuntu-latest
     steps:
-      - name: Wait 2 hours
-        run: sleep 7200
+      #- name: Wait 2 hours
+        #run: sleep 7200
       - name: Set repo to internal
         uses: actions/github-script@v3
         with:
-          github-token: ${{secrets.BRANCH_PROTECTION_BYPASS}}
+          github-token: ${{secrets.CODING_TEST_VISIBILITY_TOKEN}}
           script: |
             github.repos.update({
               owner: context.repo.owner,
