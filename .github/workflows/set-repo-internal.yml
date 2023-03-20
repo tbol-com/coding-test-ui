@@ -12,7 +12,7 @@ jobs:
       #- name: Wait 2 hours
         #run: sleep 7200
       - name: Set repo to internal
-        uses: actions/github-script@v3
+        uses: actions/github-script@v6
         with:
           github-token: ${{secrets.CODING_TEST_VISIBILITY_TOKEN}}
           script: |
